@@ -16,13 +16,13 @@ nav a.active{background:var(--accent);color:#fff}
 .hero{display:flex;gap:20px;align-items:center;padding:18px 0;border-bottom:1px solid #eee}
 .hero .text{flex:1}
 .lead{color:var(--muted);margin:6px 0}
-.btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700}
+.btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700;border:0;cursor:pointer}
 .card{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,0.06)}
 .grid{display:grid;grid-template-columns:1fr 300px;gap:14px}
 ul.features{list-style:disc inside;padding-left:0;margin:14px 0;display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
 dl{margin:0}
 form{display:flex;flex-direction:column;gap:8px}
-input,select{padding:8px;border-radius:8px;border:1px solid #e6eef9}
+input,select,button{padding:8px;border-radius:8px;border:1px solid #e6eef9}
 footer{text-align:center;padding:14px 0;color:var(--muted);border-top:1px solid #f0f4f8;margin-top:18px}
 @media(max-width:720px){.grid{grid-template-columns:1fr}.features{grid-template-columns:1fr}nav{display:none}}
 </style>
@@ -30,9 +30,8 @@ footer{text-align:center;padding:14px 0;color:var(--muted);border-top:1px solid 
 <body>
 <div class="wrap">
 <header>
-<div class="brand">
-<svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#0b72ff"/></svg>
-Pacific Trails Resort
+<div class="brand" aria-hidden="true">
+<svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#0b72ff"/></svg> Pacific Trails Resort
 </div>
 <nav aria-label="Main navigation">
 <a href="#home" class="active">Home</a>
@@ -47,12 +46,9 @@ Pacific Trails Resort
 <p class="kicker" style="color:var(--accent);font-weight:700;font-size:12px">Escape the ordinary</p>
 <h1 style="margin:6px 0">Enjoy Nature in Luxury</h1>
 <p class="lead">Panoramic ocean views, private yurts, and a cooked-to-order breakfast each morning.</p>
-<a class="btn" href="#reservations">Book Now</a>
+<a class="btn" href="#reservations" role="button">Book Now</a>
 </div>
-<aside class="card" style="width:300px">
-<div style="font-size:14px;color:var(--muted)">12010 Pacific Trails Road<br>Zephyr, CA</div>
-<div style="margin-top:10px;font-weight:700">888-555-5555</div>
-</aside>
+<aside class="card" style="width:300px"><div style="font-size:14px;color:var(--muted)">12010 Pacific Trails Road<br>Zephyr, CA</div><div style="margin-top:10px;font-weight:700">888-555-5555</div></aside>
 </section>
 <section style="padding:16px 0">
 <h2 style="margin:0 0 6px 0">What we offer</h2>
@@ -60,7 +56,7 @@ Pacific Trails Resort
 <ul class="features">
 <li class="card">Relax in our lodge with complimentary appetizers</li>
 <li class="card">Nightly fine dining with ocean view</li>
-<li class="card">Heated outdoor pool & whirlpool</li>
+<li class="card">Heated outdoor pool &amp; whirlpool</li>
 <li class="card">Guided and self-guided coastal tours</li>
 </ul>
 </section>
@@ -86,27 +82,17 @@ Pacific Trails Resort
 <section id="activities" style="padding:6px 0">
 <h2 style="margin-top:0">Activities</h2>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-top:8px">
-<div class="card">Guided coastal hikes</div>
-<div class="card">Kayaking & beachcombing</div>
-<div class="card">Pool & wellness</div>
+<div class="card">Guided coastal hikes</div><div class="card">Kayaking &amp; beachcombing</div><div class="card">Pool &amp; wellness</div>
 </div>
 </section>
 <section id="reservations" style="padding:6px 0;margin-bottom:6px">
 <h2 style="margin-top:0">Reservations</h2>
 <div class="grid">
-<form class="card" onsubmit="event.preventDefault();alert('Demo booking — integrate a real system');">
-<input name="name" placeholder="Full name" required>
-<div style="display:flex;gap:8px">
-<input type="date" name="checkin" required style="flex:1">
-<input type="date" name="checkout" required style="flex:1">
-</div>
-<select name="guests"><option>1</option><option>2</option><option>3</option><option>4</option></select>
-<button class="btn" type="submit">Check Availability</button>
-</form>
-<aside class="card">
-<div style="font-weight:700">Need help?</div>
-<div style="color:var(--muted);margin-top:8px">Call <a href="tel:8885555555" style="color:var(--accent);text-decoration:none">888-555-5555</a></div>
-</aside>
+<form class="card" id="booking" novalidate><input name="name" placeholder="Full name" required>
+<div style="display:flex;gap:8px"><input type="date" name="checkin" required style="flex:1"><input type="date" name="checkout" required style="flex:1"></div>
+<select name="guests" aria-label="Number of guests"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+<button class="btn" type="submit">Check Availability</button></form>
+<aside class="card"><div style="font-weight:700">Need help?</div><div style="color:var(--muted);margin-top:8px">Call <a href="tel:8885555555" style="color:var(--accent);text-decoration:none">888-555-5555</a></div></aside>
 </div>
 </section>
 <section class="contact" style="padding:6px 0">
@@ -115,43 +101,54 @@ Pacific Trails Resort
 </section>
 </main>
 <footer>
-<div class="wrap">
-<small>© 2022 Pacific Trails Resort</small>
-</div>
+<div class="wrap"><small>© 2026 Pacific Trails Resort — Demo site</small></div>
 </footer>
 </div>
 <script>
-// Simple interactions
-(function(){
-  const nav = document.querySelectorAll('nav a');
-  nav.forEach(a=>a.addEventListener('click',e=>{
-    nav.forEach(x=>x.classList.remove('active'));
-    e.currentTarget.classList.add('active');
-  }));
-  // Smooth focus for hash links
-  window.addEventListener('hashchange',()=>{
-    const id = location.hash.slice(1);
-    const el = document.getElementById(id);
-    if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
-  });
-  // Respect reduced motion preference
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
-  if(prefersReduced){
-    window.scrollTo = (opts)=>document.documentElement.scrollTop = 0;
-  }
-  // simple form validation hint
-  const form = document.querySelector('form');
-  if(form) form.addEventListener('submit',e=>{
-    const name = form.querySelector('[name=name]');
-    if(!name.value.trim()) { alert('Please enter your name'); name.focus(); }
-  });
-  // keyboard shortcut: press "r" to go to reservations
-  document.addEventListener('keydown',e=>{
-    if(e.key.toLowerCase()==='r' && !e.metaKey && !e.ctrlKey) location.hash='#reservations';
-  });
-  // tiny usage log (no analytics)
-  console.log('Pacific Trails demo loaded');
-})();
+(function(){const nav=document.querySelectorAll('nav a');nav.forEach(a=>a.addEventListener('click',e=>{nav.forEach(x=>x.classList.remove('active'));e.currentTarget.classList.add('active');}));
+window.addEventListener('hashchange',()=>{const id=location.hash.slice(1);const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth',block:'start'});});
+const prefersReduced=window.matchMedia('(prefers-reduced-motion:reduce)').matches;if(prefersReduced)window.scrollTo=(opts)=>document.documentElement.scrollTop=0;
+const form=document.getElementById('booking');if(form)form.addEventListener('submit',e=>{e.preventDefault();const name=form.querySelector('[name=name]');if(!name.value.trim()){alert('Please enter your name');name.focus();return;}const checkin=form.querySelector('[name=checkin]').value;const checkout=form.querySelector('[name=checkout]').value;const guests=form.querySelector('[name=guests]').value;alert(`Thanks ${name.value.trim()}!\nRequested: ${checkin} → ${checkout} for ${guests} guest(s).\nThis is a demo — integrate a real booking system.`);form.reset();location.hash='#home';});
+document.addEventListener('keydown',e=>{if(e.key.toLowerCase()==='r'&&!e.metaKey&&!e.ctrlKey)location.hash='#reservations';});
+console.log('Pacific Trails demo loaded');})();
 </script>
+<noscript><div style="background:#fff6;padding:8px;text-align:center;border-radius:8px;margin:12px 0">This demo works best with JavaScript enabled.</div></noscript>
+<a href="#home" style="position:fixed;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden" aria-hidden="true">Skip to content</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
