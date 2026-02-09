@@ -2,35 +2,67 @@
 body {
     background-color: #FFFFFF;
     color: #555555;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header styling */
+/* Header */
 header {
     background-color: #002171;
     color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Navigation bar styling */
+/* Navigation */
 nav {
     background-color: #BBDEFB;
+    padding: 10px;
+    text-align: center;
 }
 
-/* Subheadings */
+nav a {
+    text-decoration: none;
+    color: #002171;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+/* H2 headings */
 h2 {
     color: #1976D2;
+    text-align: center;
 }
 
-/* Definition term in yurts page */
+/* dt elements */
 dt {
     color: #002171;
 }
 
-/* Class for resort name */
+/* Resort class for company name */
 .resort {
     color: #1976D2;
+    font-weight: bold;
 }
 
-/* Remove extra space below h1 */
+/* Remove default bottom margin from h1 to collapse space */
 h1 {
     margin-bottom: 0;
 }
+
+/* Contact div */
+#contact {
+    margin-top: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
