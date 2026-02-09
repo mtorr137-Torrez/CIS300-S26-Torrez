@@ -3,66 +3,44 @@ body {
     background-color: #FFFFFF;
     color: #555555;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-/* Header */
+/* Header styles */
 header {
     background-color: #002171;
     color: #FFFFFF;
     padding: 20px;
-    text-align: center;
 }
 
-/* Navigation */
-nav {
-    background-color: #BBDEFB;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    text-decoration: none;
-    color: #002171;
-    font-weight: bold;
-    margin: 0 10px;
-}
-
-/* H2 headings */
-h2 {
-    color: #1976D2;
-    text-align: center;
-}
-
-/* dt elements */
-dt {
-    color: #002171;
-}
-
-/* Resort class for company name */
-.resort {
-    color: #1976D2;
-    font-weight: bold;
-}
-
-/* Remove default bottom margin from h1 to collapse space */
+/* Remove default bottom margin from h1 */
 h1 {
     margin-bottom: 0;
 }
 
-/* Contact div */
-#contact {
-    margin-top: 20px;
-    line-height: 1.5;
-    text-align: center;
+/* Navigation styles */
+nav {
+    background-color: #BBDEFB;
+    padding: 10px;
 }
 
-/* Footer */
-footer {
-    background-color: #f2f2f2;
-    text-align: center;
-    padding: 10px;
+/* h2 styles */
+h2 {
+    color: #1976D2;
+}
+
+/* Description term styles */
+dt {
+    color: #002171;
+    font-weight: bold;
+}
+
+/* Resort class styles */
+.resort {
+    color: #1976D2;
+}
+
+/* Contact section */
+#contact {
     margin-top: 20px;
 }
 
