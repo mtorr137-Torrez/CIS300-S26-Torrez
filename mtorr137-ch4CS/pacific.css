@@ -1,0 +1,36 @@
+/* Global styles */
+body {
+    background-color: #FFFFFF;
+    color: #555555;
+}
+
+/* Header styling */
+header {
+    background-color: #002171;
+    color: #FFFFFF;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #BBDEFB;
+}
+
+/* Subheadings */
+h2 {
+    color: #1976D2;
+}
+
+/* Definition term in yurts page */
+dt {
+    color: #002171;
+}
+
+/* Class for resort name */
+.resort {
+    color: #1976D2;
+}
+
+/* Remove extra space below h1 */
+h1 {
+    margin-bottom: 0;
+}
