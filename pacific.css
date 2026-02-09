@@ -1,46 +1,53 @@
-/* Global styles */
 body {
     background-color: #FFFFFF;
-    color: #555555;
-    font-family: Arial, sans-serif;
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Header styles */
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+}
+
 header {
-    background-color: #002171;
+    background-color: #003366;
     color: #FFFFFF;
-    padding: 20px;
-}
-
-/* Remove default bottom margin from h1 */
-h1 {
-    margin-bottom: 0;
-}
-
-/* Navigation styles */
-nav {
-    background-color: #BBDEFB;
     padding: 10px;
 }
 
-/* h2 styles */
-h2 {
-    color: #1976D2;
+h1 {
+    margin: 0;
 }
 
-/* Description term styles */
-dt {
-    color: #002171;
+nav {
+    background-color: #90C7E3;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
     font-weight: bold;
+    color: #000033;
+    margin-right: 15px;
 }
 
-/* Resort class styles */
-.resort {
-    color: #1976D2;
+main {
+    padding: 10px;
 }
 
-/* Contact section */
-#contact {
-    margin-top: 20px;
+h2 {
+    color: #3399CC;
 }
 
+h3 {
+    color: #000033;
+}
+
+footer {
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+}
