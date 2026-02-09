@@ -16,23 +16,22 @@ header {
     background-color: #003366;
     color: #FFFFFF;
     padding: 10px;
-    margin-bottom: 0;
 }
 
 h1 {
     margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
 nav {
-    background-color: #90C7E3;
+    background: linear-gradient(to right, #FFFFFF, #90C7E3);
     padding: 5px;
-    margin-top: 0;
 }
 
 nav a {
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: bold;
-    color: #000033;
+    color: #660099;
     margin-right: 15px;
 }
 
@@ -42,16 +41,17 @@ main {
 
 h2 {
     color: #3399CC;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
 h3 {
     color: #000033;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
 footer {
     font-size: 0.8em;
     font-style: italic;
-    text-align: center;
+    text-align: left;
     padding: 10px;
 }
-
