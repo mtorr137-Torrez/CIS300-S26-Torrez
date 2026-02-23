@@ -1,6 +1,6 @@
 /* ---------- Body ---------- */
 body {
-    background: linear-gradient(to bottom, #FFFFFF, #90C7E3) no-repeat;
+    background: linear-gradient(to bottom, #FFFFFF, #90C7E3);
     color: #666666;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -21,7 +21,7 @@ header {
     height: 60px;
     text-align: center;
     padding-top: 15px;
-    background-color: #003366; /* optional color for contrast */
+    background-color: #003366; /* optional contrast color */
     color: #FFFFFF;
 }
 
@@ -48,7 +48,7 @@ nav a {
 /* ---------- Main ---------- */
 main {
     padding: 1px 20px 20px 20px;
-    display: block; /* for IE support */
+    display: block; /* ensures IE displays HTML5 main correctly */
 }
 
 /* ---------- Headings ---------- */
@@ -65,7 +65,7 @@ h3 {
 
 /* ---------- Lists ---------- */
 ul {
-    list-style-image: url(marker.gif);
+    list-style-image: url('marker.gif');
 }
 
 /* ---------- Footer ---------- */
