@@ -24,6 +24,9 @@
     <h2>Welcome</h2>
     <p>We provide professional tree trimming, removal, and maintenance services.</p>
 
+    <!-- IMAGE -->
+    <img src="tree.jpg" alt="Tree Service" width="400">
+
     <video width="400" controls>
         <source src="video.mp4" type="video/mp4">
     </video>
