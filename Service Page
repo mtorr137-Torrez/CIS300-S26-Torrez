@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header><h1>Our Services</h1></header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+    <h2>Service List</h2>
+
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Price</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            <td>Tree Trimming</td>
+            <td>$100-$300</td>
+            <td>1-2 hrs</td>
+        </tr>
+        <tr>
+            <td>Tree Removal</td>
+            <td>$300-$1000</td>
+            <td>2-5 hrs</td>
+        </tr>
+        <tr>
+            <td>Stump Grinding</td>
+            <td>$150-$400</td>
+            <td>1-3 hrs</td>
+        </tr>
+    </table>
+</main>
+
+<footer><p>© 2026 Tree Services</p></footer>
+
+</body>
+</html>
