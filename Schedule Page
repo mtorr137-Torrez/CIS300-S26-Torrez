@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schedule Work</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header><h1>Schedule Service</h1></header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+    <h2>Book an Appointment</h2>
+
+    <form action="#">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="date" required>
+        <textarea placeholder="Details"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</main>
+
+<footer><p>© 2026 Tree Services</p></footer>
+
+</body>
+</html>
