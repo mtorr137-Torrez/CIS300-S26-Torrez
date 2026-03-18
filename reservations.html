@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
     <title>Pacific Trails Resort :: Reservations</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pacific.css">
 </head>
 
 <body>
-    <div id="wrapper">
 
-        <!-- Header -->
-        <header>
-            <h1>Pacific Trails Resort</h1>
-        </header>
+<div id="wrapper">
 
-        <!-- Navigation -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="yurts.html">Yurts</a>
-            <a href="activities.html">Activities</a>
-            <a href="reservations.html">Reservations</a>
-        </nav>
+<header>
+    <h1>Pacific Trails Resort</h1>
+</header>
 
-        <!-- Main Content -->
-        <main>
-            <h2>Reservations at Pacific Trails</h2>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yurts.html">Yurts</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+    </ul>
+</nav>
 
-            <p>Contact us today to reserve your luxury yurt at Pacific Trails Resort.</p>
-            <p>Required fields are marked with an asterisk (*).</p>
+<div class="hero">
+    <img src="reservationhero.jpg" alt="Reservations" width="100%">
+</div>
 
-            <form>
-                <label for="myName">*Name:</label><br>
-                <input type="text" id="myName" name="myName" required><br><br>
+<main>
+    <h2>Make a Reservation</h2>
 
-                <label for="myEmail">*Email:</label><br>
-                <input type="email" id="myEmail" name="myEmail" required><br><br>
+    <form action="#">
+        <label>Name:</label>
+        <input type="text" required>
 
-                <label for="myArrival">Arrival Date:</label><br>
-                <input type="date" id="myArrival" name="myArrival"><br><br>
+        <label>Email:</label>
+        <input type="email" required>
 
-                <label for="myNights">Nights:</label><br>
-                <input type="number" id="myNights" name="myNights" min="1"><br><br>
+        <label>Phone:</label>
+        <input type="tel" required>
 
-                <input type="submit" value="Submit Request">
-            </form>
-        </main>
+        <label>Date:</label>
+        <input type="date" required>
 
-        <!-- Footer -->
-        <footer>
-            &copy; 2022 Pacific Trails Resort<br>
-            <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
-        </footer>
+        <label>Comments:</label>
+        <textarea></textarea>
 
-    </div>
+        <input type="submit" value="Submit">
+    </form>
+
+</main>
+
+<footer>
+    <p>© 2026 Pacific Trails Resort</p>
+</footer>
+
+</div>
+
 </body>
 </html>
