@@ -1,3 +1,15 @@
+/* FORM - mobile (default) */
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+input, textarea {
+  margin-bottom: 0.5em;
+}
+
+
 /* MOBILE FIRST (SMALL) */
 
 body {
