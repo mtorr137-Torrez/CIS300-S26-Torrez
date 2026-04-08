@@ -1,154 +1,48 @@
-/* FORM - mobile (default) */
-form {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
-
-input, textarea {
-  margin-bottom: 0.5em;
-}
-
-
-/* MOBILE FIRST (SMALL) */
-
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-#wrapper {
-    width: 100%;
-}
-
-header, nav, main, footer {
-    display: block;
-    width: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
 header {
-    background: #003366;
-    color: white;
-    text-align: center;
-}
-
-nav {
-    text-align: center;
-    padding: 0;
+  background-color: #3399cc;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  background-color: #eeeeee;
+  padding: 10px;
+  text-align: center;
 }
 
 nav li {
-    padding: 10px;
-    border-bottom: 1px solid darkblue;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-}
-
-h1 {
-    padding: 0.5em 0;
-}
-
-.hero img {
-    width: 100%;
+  display: inline;
+  margin: 10px;
 }
 
 main {
-    padding: 15px;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #3399cc;
+  padding: 10px;
+}
+
+th {
+  background-color: #3399cc;
+  color: white;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-}
-
-
-/* MEDIUM (600px) */
-
-@media (min-width: 600px) {
-
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    nav li {
-        border-bottom: none;
-    }
-
-    section {
-        margin-left: 2em;
-        margin-right: 2em;
-    }
-
-    .flow {
-        display: flex;
-        flex-direction: row;
-    }
-
-    section {
-        flex: 1;
-    }
-}
-
-
-/* LARGE (1024px) */
-
-@media (min-width: 1024px) {
-
-    #wrapper {
-        margin: auto;
-        width: 80%;
-        border: 1px solid darkblue;
-        box-shadow: 3px 3px darkblue;
-    }
-
-    nav {
-        text-align: left;
-        padding-left: 1em;
-    }
-
-    @supports (display: grid) {
-
-        #wrapper {
-            display: grid;
-            grid-template:
-                "header header"
-                "nav main"
-                "footer footer";
-        }
-
-        header {
-            grid-area: header;
-        }
-
-        nav {
-            grid-area: nav;
-        }
-
-        main {
-            grid-area: main;
-        }
-
-        footer {
-            grid-area: footer;
-        }
-
-        .hero {
-            grid-area: hero;
-        }
-
-        nav ul {
-            flex-direction: column;
-            padding-top: 1em;
-        }
-    }
+  text-align: center;
+  padding: 10px;
+  background-color: #eeeeee;
 }
