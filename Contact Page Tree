@@ -1,31 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="description" content="Request tree service quickly and easily.">
+<title>Request Service</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header><h1>Contact Us</h1></header>
+<header><h1>Laguna Tree Service</h1></header>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="schedule.html">Schedule</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="request.html">Request Service</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
 </nav>
 
 <main>
-    <p>Email: martintorrez05@icloud.com</p>
+  <h2>Request Service</h2>
 
-    <p>Learn more about tree care:</p>
-    <a href="https://www.arborday.org" target="_blank">Arbor Day Foundation</a>
+  <form action="#">
+    <label>Name:</label>
+    <input type="text" required>
+
+    <label>Email:</label>
+    <input type="email" required>
+
+    <label>Phone:</label>
+    <input type="tel">
+
+    <label>Service Needed:</label>
+    <input type="text">
+
+    <label>Details:</label>
+    <textarea></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
 </main>
 
-<footer><p>© 2026 Tree Services</p></footer>
+<footer>
+  <p>Laguna Tree Service</p>
+</footer>
 
 </body>
 </html>
